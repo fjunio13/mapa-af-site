@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Como o Mapa_AF acessa, usa e armazena dados na automação de gestão de pedidos.">
+  <title>Política de Privacidade — Mapa_AF</title>
+  <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+  <header class="cabecalho">
+    <div class="largura barra">
+      <a class="marca" href="../">Mapa_AF</a>
+      <nav aria-label="Navegação principal">
+        <a href="./" aria-current="page">Política de Privacidade</a>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo" class="largura">
+    <article class="politica">
+      <header class="abertura">
+        <h1>Política de Privacidade</h1>
+        <p class="introducao">Como o Mapa_AF acessa, processa, armazena e compartilha informações usadas na gestão de pedidos de assistência social.</p>
+        <p class="data">Atualizada em <time datetime="2026-11-19">19 de novembro de 2026</time></p>
+      </header>
+
+      <section class="bloco" aria-labelledby="responsavel">
+        <h2 id="responsavel">Aplicativo e responsável</h2>
+        <p>O Mapa_AF é uma automação privada de apoio a atividades voluntárias de assistência social. O mantenedor é responsável pela operação do aplicativo e atende pelo e-mail <a href="mailto:fjunio13@gmail.com">fjunio13@gmail.com</a>.</p>
+      </section>
+
+      <section class="bloco" aria-labelledby="dados">
+        <h2 id="dados">Dados e finalidade</h2>
+        <p>A automação reúne pedidos registrados em planilhas Google e informações de contato de relatórios do MegaZap. Quando presentes nas fontes autorizadas, os dados processados incluem nomes, telefones e outros dados de contato contidos nos relatórios, endereços, links de localização ou coordenadas, itens solicitados e situação dos pedidos de assistência.</p>
+        <p>Essas informações são usadas para cruzar contatos e pedidos, localizar atendimentos, consolidar relatórios e preparar o mapa operacional em Excel. A automação não usa os dados para publicidade, venda ou criação de perfis comerciais.</p>
+      </section>
+
+      <section class="bloco" aria-labelledby="google">
+        <h2 id="google">Acesso ao Google Drive e ao Google Sheets</h2>
+        <p>A integração por OAuth 2.0 depende do consentimento da conta Google que opera a automação. A leitura serve para consultar os pedidos na planilha e, quando solicitado, recuperar relatórios consolidados no Drive. A escrita é usada nas execuções autorizadas de publicação para criar o consolidado e o backup, atualizar o arquivo Excel e enviar à lixeira os consolidados vencidos.</p>
+        <p>Quando um link de localização precisa ser resolvido, a automação pode consultá-lo no Google Maps para obter as coordenadas. O uso de dados obtidos pelas APIs Google se limita às finalidades descritas aqui e segue a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado.</p>
+      </section>
+
+      <section class="bloco" aria-labelledby="processamento">
+        <h2 id="processamento">Processamento, armazenamento e acesso</h2>
+        <p>O processamento automatizado ocorre em um ambiente temporário do GitHub Actions, em um repositório privado. Quando a automação publica o resultado, os arquivos operacionais, os relatórios consolidados e as cópias de segurança são guardados no Google Drive. As permissões de acesso e compartilhamento desses arquivos são administradas no Drive.</p>
+        <p>As credenciais fornecidas à automação são configuradas em Secrets do GitHub Actions. O modo de teste pode disponibilizar o Excel e o relatório de execução como artefatos do repositório privado. O Excel de teste pode conter dados de pedidos e contatos e fica disponível a quem tem acesso ao repositório. Os registros de execução do pipeline contêm indicadores e informações de diagnóstico.</p>
+        <p>Este site institucional é hospedado pelo GitHub Pages e não contém dados dos atendimentos, formulários de coleta nem ferramentas de rastreamento do aplicativo.</p>
+      </section>
+
+      <section class="bloco" aria-labelledby="retencao">
+        <h2 id="retencao">Retenção de arquivos e relatórios</h2>
+        <ul>
+          <li>O pipeline configura os artefatos do GitHub Actions para retenção de três dias.</li>
+          <li>Após uma publicação bem-sucedida, o pipeline envia à lixeira os relatórios consolidados do MegaZap que reconhece e que têm mais de 30 dias.</li>
+          <li>O pipeline não estabelece prazo de exclusão automática para a planilha de origem, o mapa atual ou os backups do mapa. A gestão desses arquivos cabe ao responsável pelo Drive.</li>
+        </ul>
+      </section>
+
+      <section class="bloco acesso" aria-labelledby="contato">
+        <h2 id="contato">Revogação e solicitações de privacidade</h2>
+        <p>A conta que concedeu acesso pode revogá-lo na área de <a href="https://myaccount.google.com/connections">conexões com terceiros da Conta Google</a>. A revogação interrompe novos acessos com a autorização revogada. Arquivos já gerados continuam sujeitos à gestão do local em que foram guardados.</p>
+        <p>Para esclarecer dúvidas ou solicitar providências relacionadas a dados pessoais, escreva para <a href="mailto:fjunio13@gmail.com">fjunio13@gmail.com</a>.</p>
+      </section>
+    </article>
+  </main>
+  <footer class="rodape">
+    <div class="largura barra">
+      <span>Mapa_AF</span>
+      <a href="../">Página inicial</a>
+    </div>
+  </footer>
+</body>
+</html>
